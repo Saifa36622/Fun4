@@ -1,4 +1,0 @@
-Invoking command in '/home/saifa/Desktop/Fun4/build/Fun4': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --build /home/saifa/Desktop/Fun4/build/Fun4 -- -j16 -l16
-Invoked command in '/home/saifa/Desktop/Fun4/build/Fun4' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --build /home/saifa/Desktop/Fun4/build/Fun4 -- -j16 -l16
-Invoking command in '/home/saifa/Desktop/Fun4/build/Fun4': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --install /home/saifa/Desktop/Fun4/build/Fun4
-Invoked command in '/home/saifa/Desktop/Fun4/build/Fun4' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --install /home/saifa/Desktop/Fun4/build/Fun4

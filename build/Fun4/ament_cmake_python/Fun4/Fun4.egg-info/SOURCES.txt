@@ -1,7 +1,0 @@
-setup.py
-Fun4/__init__.py
-Fun4/dummy_module.py
-Fun4.egg-info/PKG-INFO
-Fun4.egg-info/SOURCES.txt
-Fun4.egg-info/dependency_links.txt
-Fun4.egg-info/top_level.txt
