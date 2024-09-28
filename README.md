@@ -146,7 +146,58 @@ video output mode 1 (click the image)
 
 [![Watch the video](https://github.com/user-attachments/assets/d2fe5cdf-c64e-44fe-9753-efc6b7e145d7)](https://youtu.be/5NdAb9AZTrY?si=sJGyIGtZzVdUiNK6)
 
+### mode 2
+same as mode 1 ,first you need to be in the workspace and then run this command to open the launch file 
+
+```
+ros2 launch example_description fun.launch.py
+```
+and then use the command 
+
+```
+ros2 service call /Mode custom_interface/srv/Basic "mode:
+  data: 2
+x:
+  data: 1
+y:
+  data: 0.0
+z:
+  data: 0.0" 
+```
+or 
+```
+ros2 service call /Mode custom_interface/srv/Basic "mode:
+  data: 2
+x:
+  data: 2
+y:
+  data: 0.0
+z:
+  data: 0.0" 
+```
+and when the command successful the service will respond **True** and the log will show which mode you are on 
+
+![image](https://github.com/user-attachments/assets/eadb6e8c-5c9c-4b4a-8b94-299a64cbf282)
+
+but if the data is not 1 ,2 the service will respond **False** and the log will show the error
+
+![image](https://github.com/user-attachments/assets/1bdcd25a-3426-4ae8-b090-1d6de8ebd1bf)
 
 
+To use mode 2 ,simply change the mode number to 2 and the value x will determine the refference axis of the move 
 
+ - x = 1 -> refference from base axis 
+ - x = 2 -> refference from end_effector axis
+
+then use command 
+
+```
+ros2 run teleop_twist_keyboard teleop_twist_keyboard
+```
+then the robot will move as the teleopkey press 
+
+
+video output mode 2 (click the image)
+
+[![Watch the video](https://github.com/user-attachments/assets/d2fe5cdf-c64e-44fe-9753-efc6b7e145d7)](https://youtu.be/cs42aag8suQ)
 
