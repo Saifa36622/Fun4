@@ -201,3 +201,5 @@ video output mode 2 (click the image)
 
 [![Watch the video](https://github.com/user-attachments/assets/d2fe5cdf-c64e-44fe-9753-efc6b7e145d7)](https://youtu.be/cs42aag8suQ)
 
+### mode 3
+
