@@ -1,6 +1,6 @@
 # **Fun4**
 
-### **Basic installation** 
+## **Basic installation** 
 
 In this project we will develop a little fun turtle project using simple libraly on ubuntu  So Ubuntu (22.04 LTS is recommend) with Ros humble 
 
@@ -33,13 +33,13 @@ In this project there is some dependency (if you dont have you can follow this t
 * [teleop_twist_keyboard](https://index.ros.org/p/teleop_twist_keyboard/)
 
 
-### **System architecture** 
+## **System architecture** 
 
 ![Screenshot from 2024-09-28 15-55-25](https://github.com/user-attachments/assets/b02b2e09-3507-49eb-af59-d42eecb2184b)
 
 this is the system architecture that will show how this system work ,In the main part we develop mainly 2 node as follow 
 
-#### 1.Controller node
+### 1.Controller node
 
 this node will be the main source that will control the robot 
 
@@ -58,15 +58,15 @@ and in the custom service we going to have a parameter as follow
 ![Screenshot from 2024-09-28 15-56-06](https://github.com/user-attachments/assets/6646a508-898b-4f91-a1a3-44a674d050fc)
 
 So when the user request service in to this node the node will response with boolean according to the condition in the mode that been input 
-  ##### mode 1 
+  #### mode 1 
   In this mode we will do the calculation according to the input x y z from custom service ,So there is no need to provide more data
-  ##### mode 2
+  #### mode 2
 
 ![Screenshot from 2024-09-28 16-10-02](https://github.com/user-attachments/assets/f37ec97f-2cbc-4486-a63b-1ede244dc814)
 
 This node is goning to be a Tele-op node ,So it will subscribe the topic "cmd_vel" to this node 
 
-  ##### mode 3
+  #### mode 3
 
 ![Screenshot from 2024-09-28 16-12-22](https://github.com/user-attachments/assets/6f4df2de-d0e1-4e00-8723-2dea6677d119)
 
@@ -79,7 +79,7 @@ and then when the target node finish calculation nomatter which mode ,this node 
 as the image ,the joint state and end_effector_position will be publish to robot_state_publisher and then to visualize it in to rviz
 
 
-#### 2.Random node
+### 2.Random node
 
 this node will random the possible position from the robot workspace and then publish it 
 
@@ -88,7 +88,7 @@ this node will random the possible position from the robot workspace and then pu
 as the image ,this node will wait for the request from the controller node in topic "/request_target" and then generate the random the possible position and publish it to "/target"
 
 
-
+## How to use each mode 
 
 
 
