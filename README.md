@@ -89,7 +89,16 @@ as the image ,this node will wait for the request from the controller node in to
 
 ## work space 
  So to know the robot work space ,I create the DH parameter of the RRR robot 
+ 
+ ![Screenshot from 2024-09-28 17-18-10](https://github.com/user-attachments/assets/3fea447b-5478-4f95-bdb7-c0694fa798d9)
 
+and the loop apply each joint -pi till pi and then do the foward kinematic in each angle in every joint and then keep the position x y x and then use that position to plot the max and min workspace of the robot 
+
+![Screenshot from 2024-09-28 17-19-15](https://github.com/user-attachments/assets/21d6776c-7cb9-4ac5-8651-bc604ae2aa25)
+
+![Screenshot from 2024-09-28 17-20-46](https://github.com/user-attachments/assets/3dcdf3f8-a068-4644-a963-4019f930e9af)
+
+(for this part I use the code from the HW_kineatic)
 ## How to use each mode 
 
 ### mode 1 
