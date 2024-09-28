@@ -202,4 +202,42 @@ video output mode 2 (click the image)
 [![Watch the video](https://github.com/user-attachments/assets/d2fe5cdf-c64e-44fe-9753-efc6b7e145d7)](https://youtu.be/cs42aag8suQ)
 
 ### mode 3
+same as mode 1 and 2 ,first you need to be in the workspace and then run this command to open the launch file 
+
+```
+ros2 launch example_description fun.launch.py
+```
+
+and then 
+```
+ros2 service call /Mode custom_interface/srv/Basic "mode:
+  data: 3
+x:
+  data: 0.0
+y:
+  data: 0.0
+z:
+  data: 0.0" 
+```
+
+and then the resposnse will return as **True** and the log will respond as image 
+
+![image](https://github.com/user-attachments/assets/d88f5309-c1d3-4cf6-90c2-c72239d82cf2)
+
+So the robot will start moving automaticly
+
+
+video output mode 3 (click the image)
+
+[![Watch the video](https://github.com/user-attachments/assets/d2fe5cdf-c64e-44fe-9753-efc6b7e145d7)](https://www.youtube.com/watch?v=fKTjRlf-mQk)
+
+### end_effecter_pose 
+
+as you run each mode after the 
+```
+ros2 launch example_description fun.launch.py
+```
+you can use this command to visualize the position of the end_effector
+
+
 
