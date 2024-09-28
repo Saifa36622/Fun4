@@ -87,6 +87,8 @@ this node will random the possible position from the robot workspace and then pu
 
 as the image ,this node will wait for the request from the controller node in topic "/request_target" and then generate the random the possible position and publish it to "/target"
 
+## work space 
+ So to know the robot work space ,I create the DH parameter of the RRR robot 
 
 ## How to use each mode 
 
