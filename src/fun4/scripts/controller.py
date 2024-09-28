@@ -30,11 +30,13 @@ class controller(Node):
         self.create_subscription(Int64,'/request_target',self.request_target_callback,10)
 
         self.create_subscription(Twist,'/cmd_vel',self.tele_op_callback,10)
-        self.create_subscription(Twist,'/cmd_vel_end',self.tele_op_end_callback,10)
+        # self.create_subscription(Twist,'/cmd_vel_end',self.tele_op_end_callback,10)
 
         self.before_mode = 0
+        self.q_d_base = [0,0,0]
+        self.q_d_end = [0,0,0]
         self.cmd = [0,0,0,0,0,0]
-        self.cmd_end = [0,0,0]
+        self.cmd_end = [0,0,0,0,0,0]
         self.stop_move = 0
         self.auto_mode = 0
         self.mode = 0
@@ -198,8 +200,11 @@ class controller(Node):
         self.cmd[4] = msg.angular.z
         self.cmd[5] = msg.angular.z
 
-        Jacobian = self.robot.jacob0(self.q)
-
+        if self.x == 1 : 
+            Jacobian = self.robot.jacob0(self.q)
+        elif self.x == 2 :
+            Jacobian = self.robot.jacobe(self.q)
+            
         Jacobian_inv = np.linalg.pinv(Jacobian)
 
         q_dot_jaco = np.dot(Jacobian_inv, self.cmd)
@@ -210,17 +215,29 @@ class controller(Node):
 
 
 
-    def tele_op_end_callback(self,msg:Twist):
-        self.cmd_end[0] = msg.linear.x
-        self.cmd_end[1] = msg.linear.y
-        self.cmd_end[2] = msg.linear.z
+    # def tele_op_end_callback(self,msg:Twist):
+    #     self.cmd_end[0] = msg.linear.x
+    #     self.cmd_end[1] = msg.linear.y
+    #     self.cmd_end[2] = msg.linear.z
+    #     self.cmd_end[3] = msg.linear.z
+    #     self.cmd_end[4] = msg.linear.z
+    #     self.cmd_end[5] = msg.linear.z
+
+    #     Jacobian = self.robot.jacobe(self.q)
+
+    #     Jacobian_inv = np.linalg.pinv(Jacobian)
+
+    #     q_dot_jaco = np.dot(Jacobian_inv, self.cmd)
+
+    #     self.q_d_end = q_dot_jaco.flatten().tolist() 
 
 
-    def teleop_run(self):
-        if self.x == 1 :
-            self.q_d = self.cmd
-        elif self.x == 2 :
-            self.q_d = self.cmd_end
+
+    # def teleop_run(self):
+    #     if self.x == 1 :
+    #         self.q_d = self.q_d_base
+    #     elif self.x == 2 :
+    #         self.q_d = self.q_d_end
 
             
 
@@ -232,7 +249,6 @@ class controller(Node):
         if self.mode == 1 :
             pass
         elif self.mode == 2 :
-
             # self.teleop_run()
             pass
 
