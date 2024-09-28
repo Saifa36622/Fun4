@@ -33,3 +33,65 @@ In this project there is some dependency (if you dont have you can follow this t
 * [teleop_twist_keyboard](https://index.ros.org/p/teleop_twist_keyboard/)
 
 
+### **System architecture** 
+
+![Screenshot from 2024-09-28 15-55-25](https://github.com/user-attachments/assets/b02b2e09-3507-49eb-af59-d42eecb2184b)
+
+this is the system architecture that will show how this system work ,In the main part we develop mainly 2 node as follow 
+
+#### 1.Controller node
+
+this node will be the main source that will control the robot 
+
+![image](https://github.com/user-attachments/assets/888efcac-2c3e-4d9f-b10a-a30bb311c5bb)
+
+from this node there is going to be 3 main mode 
+ - mode 1 Inverse Pose Kinematics mode 
+ - mode 2 Tele-operation mode
+ - mode 3 Auto mode <br>
+ all this mode is determine by a custom service that going to input by a user like this
+
+![Screenshot from 2024-09-28 16-03-49](https://github.com/user-attachments/assets/05d591fd-ddf5-4ec6-a628-c06e5562cfd6)
+
+and in the custom service we going to have a parameter as follow 
+
+![Screenshot from 2024-09-28 15-56-06](https://github.com/user-attachments/assets/6646a508-898b-4f91-a1a3-44a674d050fc)
+
+So when the user request service in to this node the node will response with boolean according to the condition in the mode that been input 
+  ##### mode 1 
+  In this mode we will do the calculation according to the input x y z from custom service ,So there is no need to provide more data
+  ##### mode 2
+
+![Screenshot from 2024-09-28 16-10-02](https://github.com/user-attachments/assets/f37ec97f-2cbc-4486-a63b-1ede244dc814)
+
+This node is goning to be a Tele-op node ,So it will subscribe the topic "cmd_vel" to this node 
+
+  ##### mode 3
+
+![Screenshot from 2024-09-28 16-12-22](https://github.com/user-attachments/assets/6f4df2de-d0e1-4e00-8723-2dea6677d119)
+
+This node is will need to publish to "/request_target" to request target from the random node and subscribe to "/target"  to get the input 
+
+and then when the target node finish calculation nomatter which mode ,this node will publish the joint state and end_effector_position like this 
+
+![image](https://github.com/user-attachments/assets/54e0daf1-4ca7-4935-bea8-fbc1bcf6f494)
+
+as the image ,the joint state and end_effector_position will be publish to robot_state_publisher and then to visualize it in to rviz
+
+
+#### 2.Random node
+
+this node will random the possible position from the robot workspace and then publish it 
+
+![image](https://github.com/user-attachments/assets/b326dffd-e436-47a8-aae7-bad8b4f4a489)
+
+as the image ,this node will wait for the request from the controller node in topic "/request_target" and then generate the random the possible position and publish it to "/target"
+
+
+
+
+
+
+
+
+
