@@ -1,0 +1,4 @@
+source;share/Fun4/local_setup.bash
+source;share/Fun4/local_setup.dsv
+source;share/Fun4/local_setup.sh
+source;share/Fun4/local_setup.zsh

@@ -1,0 +1,294 @@
+[0.089s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.089s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x72e1b120a0b0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x72e1b1209c60>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x72e1b1209c60>>)
+[0.229s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.229s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.229s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.229s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.229s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.230s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.230s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/saifa/Desktop/Fun4'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(Part1) by extensions ['ignore', 'ignore_ament_install']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(Part1) by extension 'ignore'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(Part1) by extension 'ignore_ament_install'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(Part1) by extensions ['colcon_pkg']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(Part1) by extension 'colcon_pkg'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(Part1) by extensions ['colcon_meta']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(Part1) by extension 'colcon_meta'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(Part1) by extensions ['ros']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(Part1) by extension 'ros'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(Part1) by extensions ['cmake', 'python']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(Part1) by extension 'cmake'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(Part1) by extension 'python'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(Part1) by extensions ['python_setup_py']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(Part1) by extension 'python_setup_py'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extension 'ignore'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extension 'ignore_ament_install'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extensions ['colcon_pkg']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extension 'colcon_pkg'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extensions ['colcon_meta']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extension 'colcon_meta'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extensions ['ros']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extension 'ros'
+[0.242s] DEBUG:colcon.colcon_core.package_identification:Package 'src/custom_interface' with type 'ros.ament_cmake' and name 'custom_interface'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description) by extensions ['ignore', 'ignore_ament_install']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description) by extension 'ignore'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description) by extension 'ignore_ament_install'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description) by extensions ['colcon_pkg']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description) by extension 'colcon_pkg'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description) by extensions ['colcon_meta']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description) by extension 'colcon_meta'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description) by extensions ['ros']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description) by extension 'ros'
+[0.243s] DEBUG:colcon.colcon_core.package_identification:Package 'src/example_description' with type 'ros.ament_cmake' and name 'example_description'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/fun4) by extensions ['ignore', 'ignore_ament_install']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/fun4) by extension 'ignore'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/fun4) by extension 'ignore_ament_install'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/fun4) by extensions ['colcon_pkg']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/fun4) by extension 'colcon_pkg'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/fun4) by extensions ['colcon_meta']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/fun4) by extension 'colcon_meta'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/fun4) by extensions ['ros']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/fun4) by extension 'ros'
+[0.244s] DEBUG:colcon.colcon_core.package_identification:Package 'src/fun4' with type 'ros.ament_cmake' and name 'fun4'
+[0.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.268s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.268s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.271s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/saifa/Desktop/Fun4/install
+[0.272s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 39 installed packages in /home/saifa/mc_ros_ws/install
+[0.273s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/saifa/Desktop/solar/install
+[0.273s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 12 installed packages in /home/saifa/Desktop/ros2_w2_ws/install
+[0.275s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 290 installed packages in /opt/ros/humble
+[0.276s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'cmake_args' from command line to 'None'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'cmake_target' from command line to 'None'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.307s] DEBUG:colcon.colcon_core.verb:Building package 'custom_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/saifa/Desktop/Fun4/build/custom_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/saifa/Desktop/Fun4/install/custom_interface', 'merge_install': False, 'path': '/home/saifa/Desktop/Fun4/src/custom_interface', 'symlink_install': False, 'test_result_base': None}
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'example_description' build argument 'cmake_args' from command line to 'None'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'example_description' build argument 'cmake_target' from command line to 'None'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'example_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'example_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'example_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'example_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'example_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'example_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'example_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.307s] DEBUG:colcon.colcon_core.verb:Building package 'example_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/saifa/Desktop/Fun4/build/example_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/saifa/Desktop/Fun4/install/example_description', 'merge_install': False, 'path': '/home/saifa/Desktop/Fun4/src/example_description', 'symlink_install': False, 'test_result_base': None}
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'fun4' build argument 'cmake_args' from command line to 'None'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'fun4' build argument 'cmake_target' from command line to 'None'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'fun4' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.308s] Level 5:colcon.colcon_core.verb:set package 'fun4' build argument 'cmake_clean_cache' from command line to 'False'
+[0.308s] Level 5:colcon.colcon_core.verb:set package 'fun4' build argument 'cmake_clean_first' from command line to 'False'
+[0.308s] Level 5:colcon.colcon_core.verb:set package 'fun4' build argument 'cmake_force_configure' from command line to 'False'
+[0.308s] Level 5:colcon.colcon_core.verb:set package 'fun4' build argument 'ament_cmake_args' from command line to 'None'
+[0.308s] Level 5:colcon.colcon_core.verb:set package 'fun4' build argument 'catkin_cmake_args' from command line to 'None'
+[0.308s] Level 5:colcon.colcon_core.verb:set package 'fun4' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.308s] DEBUG:colcon.colcon_core.verb:Building package 'fun4' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/saifa/Desktop/Fun4/build/fun4', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/saifa/Desktop/Fun4/install/fun4', 'merge_install': False, 'path': '/home/saifa/Desktop/Fun4/src/fun4', 'symlink_install': False, 'test_result_base': None}
+[0.308s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.308s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.309s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/saifa/Desktop/Fun4/src/custom_interface' with build type 'ament_cmake'
+[0.309s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/saifa/Desktop/Fun4/src/custom_interface'
+[0.311s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.311s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.311s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.317s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/saifa/Desktop/Fun4/src/example_description' with build type 'ament_cmake'
+[0.317s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/saifa/Desktop/Fun4/src/example_description'
+[0.317s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.317s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.323s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/saifa/Desktop/Fun4/src/fun4' with build type 'ament_cmake'
+[0.323s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/saifa/Desktop/Fun4/src/fun4'
+[0.324s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.324s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.333s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/saifa/Desktop/Fun4/build/custom_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --build /home/saifa/Desktop/Fun4/build/custom_interface -- -j16 -l16
+[0.338s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/saifa/Desktop/Fun4/build/example_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --build /home/saifa/Desktop/Fun4/build/example_description -- -j16 -l16
+[0.341s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/saifa/Desktop/Fun4/build/fun4': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --build /home/saifa/Desktop/Fun4/build/fun4 -- -j16 -l16
+[0.723s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/saifa/Desktop/Fun4/build/example_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --build /home/saifa/Desktop/Fun4/build/example_description -- -j16 -l16
+[0.726s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/saifa/Desktop/Fun4/build/custom_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --build /home/saifa/Desktop/Fun4/build/custom_interface -- -j16 -l16
+[0.734s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/saifa/Desktop/Fun4/build/fun4' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --build /home/saifa/Desktop/Fun4/build/fun4 -- -j16 -l16
+[0.786s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/saifa/Desktop/Fun4/build/example_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --install /home/saifa/Desktop/Fun4/build/example_description
+[0.787s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/saifa/Desktop/Fun4/build/fun4': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --install /home/saifa/Desktop/Fun4/build/fun4
+[0.854s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fun4)
+[0.854s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/saifa/Desktop/Fun4/build/fun4' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --install /home/saifa/Desktop/Fun4/build/fun4
+[0.857s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/fun4' for CMake module files
+[0.857s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/fun4' for CMake config files
+[0.857s] Level 1:colcon.colcon_core.shell:create_environment_hook('fun4', 'cmake_prefix_path')
+[0.857s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/saifa/Desktop/Fun4/install/fun4/share/fun4/hook/cmake_prefix_path.ps1'
+[0.858s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/saifa/Desktop/Fun4/install/fun4/share/fun4/hook/cmake_prefix_path.dsv'
+[0.858s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/saifa/Desktop/Fun4/install/fun4/share/fun4/hook/cmake_prefix_path.sh'
+[0.859s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/fun4/lib'
+[0.859s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/fun4/bin'
+[0.859s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/fun4/lib/pkgconfig/fun4.pc'
+[0.859s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/fun4/lib/python3.10/site-packages'
+[0.859s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/fun4/bin'
+[0.860s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/fun4/share/fun4/package.ps1'
+[0.860s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/saifa/Desktop/Fun4/install/fun4/share/fun4/package.dsv'
+[0.861s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/fun4/share/fun4/package.sh'
+[0.861s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/fun4/share/fun4/package.bash'
+[0.862s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/fun4/share/fun4/package.zsh'
+[0.862s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/saifa/Desktop/Fun4/install/fun4/share/colcon-core/packages/fun4)
+[0.863s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(example_description)
+[0.863s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/example_description' for CMake module files
+[0.864s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/saifa/Desktop/Fun4/build/example_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --install /home/saifa/Desktop/Fun4/build/example_description
+[0.864s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/example_description' for CMake config files
+[0.864s] Level 1:colcon.colcon_core.shell:create_environment_hook('example_description', 'cmake_prefix_path')
+[0.864s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/saifa/Desktop/Fun4/install/example_description/share/example_description/hook/cmake_prefix_path.ps1'
+[0.865s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/saifa/Desktop/Fun4/install/example_description/share/example_description/hook/cmake_prefix_path.dsv'
+[0.865s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/saifa/Desktop/Fun4/install/example_description/share/example_description/hook/cmake_prefix_path.sh'
+[0.865s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/example_description/lib'
+[0.865s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/example_description/bin'
+[0.865s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/example_description/lib/pkgconfig/example_description.pc'
+[0.866s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/example_description/lib/python3.10/site-packages'
+[0.866s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/example_description/bin'
+[0.866s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/example_description/share/example_description/package.ps1'
+[0.866s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/saifa/Desktop/Fun4/install/example_description/share/example_description/package.dsv'
+[0.866s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/example_description/share/example_description/package.sh'
+[0.867s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/example_description/share/example_description/package.bash'
+[0.867s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/example_description/share/example_description/package.zsh'
+[0.867s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/saifa/Desktop/Fun4/install/example_description/share/colcon-core/packages/example_description)
+[0.871s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/saifa/Desktop/Fun4/build/custom_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --install /home/saifa/Desktop/Fun4/build/custom_interface
+[0.910s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fun4)
+[0.910s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/fun4' for CMake module files
+[0.911s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/fun4' for CMake config files
+[0.911s] Level 1:colcon.colcon_core.shell:create_environment_hook('fun4', 'cmake_prefix_path')
+[0.912s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/saifa/Desktop/Fun4/install/fun4/share/fun4/hook/cmake_prefix_path.ps1'
+[0.912s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/saifa/Desktop/Fun4/install/fun4/share/fun4/hook/cmake_prefix_path.dsv'
+[0.913s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/saifa/Desktop/Fun4/install/fun4/share/fun4/hook/cmake_prefix_path.sh'
+[0.913s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/fun4/lib'
+[0.913s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/fun4/bin'
+[0.913s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/fun4/lib/pkgconfig/fun4.pc'
+[0.913s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/fun4/lib/python3.10/site-packages'
+[0.914s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/fun4/bin'
+[0.914s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/fun4/share/fun4/package.ps1'
+[0.915s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/saifa/Desktop/Fun4/install/fun4/share/fun4/package.dsv'
+[0.915s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/fun4/share/fun4/package.sh'
+[0.915s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/fun4/share/fun4/package.bash'
+[0.916s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/fun4/share/fun4/package.zsh'
+[0.916s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/saifa/Desktop/Fun4/install/fun4/share/colcon-core/packages/fun4)
+[0.917s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(example_description)
+[0.918s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/example_description' for CMake module files
+[0.918s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/example_description' for CMake config files
+[0.919s] Level 1:colcon.colcon_core.shell:create_environment_hook('example_description', 'cmake_prefix_path')
+[0.919s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/saifa/Desktop/Fun4/install/example_description/share/example_description/hook/cmake_prefix_path.ps1'
+[0.919s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/saifa/Desktop/Fun4/install/example_description/share/example_description/hook/cmake_prefix_path.dsv'
+[0.920s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/saifa/Desktop/Fun4/install/example_description/share/example_description/hook/cmake_prefix_path.sh'
+[0.920s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/example_description/lib'
+[0.920s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/example_description/bin'
+[0.920s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/example_description/lib/pkgconfig/example_description.pc'
+[0.920s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/example_description/lib/python3.10/site-packages'
+[0.921s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/example_description/bin'
+[0.921s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/example_description/share/example_description/package.ps1'
+[0.922s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/saifa/Desktop/Fun4/install/example_description/share/example_description/package.dsv'
+[0.922s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/example_description/share/example_description/package.sh'
+[0.922s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/example_description/share/example_description/package.bash'
+[0.923s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/example_description/share/example_description/package.zsh'
+[0.923s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/saifa/Desktop/Fun4/install/example_description/share/colcon-core/packages/example_description)
+[0.946s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_interface)
+[0.946s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/saifa/Desktop/Fun4/build/custom_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --install /home/saifa/Desktop/Fun4/build/custom_interface
+[0.947s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/custom_interface' for CMake module files
+[0.947s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/custom_interface' for CMake config files
+[0.948s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interface', 'cmake_prefix_path')
+[0.948s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/saifa/Desktop/Fun4/install/custom_interface/share/custom_interface/hook/cmake_prefix_path.ps1'
+[0.948s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/saifa/Desktop/Fun4/install/custom_interface/share/custom_interface/hook/cmake_prefix_path.dsv'
+[0.948s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/saifa/Desktop/Fun4/install/custom_interface/share/custom_interface/hook/cmake_prefix_path.sh'
+[0.949s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/custom_interface/lib'
+[0.949s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interface', 'ld_library_path_lib')
+[0.949s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/saifa/Desktop/Fun4/install/custom_interface/share/custom_interface/hook/ld_library_path_lib.ps1'
+[0.949s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/saifa/Desktop/Fun4/install/custom_interface/share/custom_interface/hook/ld_library_path_lib.dsv'
+[0.949s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/saifa/Desktop/Fun4/install/custom_interface/share/custom_interface/hook/ld_library_path_lib.sh'
+[0.950s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/custom_interface/bin'
+[0.950s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/custom_interface/lib/pkgconfig/custom_interface.pc'
+[0.950s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/custom_interface/lib/python3.10/site-packages'
+[0.950s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/custom_interface/bin'
+[0.950s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/custom_interface/share/custom_interface/package.ps1'
+[0.951s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/saifa/Desktop/Fun4/install/custom_interface/share/custom_interface/package.dsv'
+[0.951s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/custom_interface/share/custom_interface/package.sh'
+[0.951s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/custom_interface/share/custom_interface/package.bash'
+[0.952s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/custom_interface/share/custom_interface/package.zsh'
+[0.952s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/saifa/Desktop/Fun4/install/custom_interface/share/colcon-core/packages/custom_interface)
+[1.097s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_interface)
+[1.097s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/custom_interface' for CMake module files
+[1.098s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/custom_interface' for CMake config files
+[1.098s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interface', 'cmake_prefix_path')
+[1.098s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/saifa/Desktop/Fun4/install/custom_interface/share/custom_interface/hook/cmake_prefix_path.ps1'
+[1.099s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/saifa/Desktop/Fun4/install/custom_interface/share/custom_interface/hook/cmake_prefix_path.dsv'
+[1.099s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/saifa/Desktop/Fun4/install/custom_interface/share/custom_interface/hook/cmake_prefix_path.sh'
+[1.099s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/custom_interface/lib'
+[1.099s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interface', 'ld_library_path_lib')
+[1.100s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/saifa/Desktop/Fun4/install/custom_interface/share/custom_interface/hook/ld_library_path_lib.ps1'
+[1.100s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/saifa/Desktop/Fun4/install/custom_interface/share/custom_interface/hook/ld_library_path_lib.dsv'
+[1.100s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/saifa/Desktop/Fun4/install/custom_interface/share/custom_interface/hook/ld_library_path_lib.sh'
+[1.100s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/custom_interface/bin'
+[1.100s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/custom_interface/lib/pkgconfig/custom_interface.pc'
+[1.101s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/custom_interface/lib/python3.10/site-packages'
+[1.101s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/custom_interface/bin'
+[1.101s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/custom_interface/share/custom_interface/package.ps1'
+[1.101s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/saifa/Desktop/Fun4/install/custom_interface/share/custom_interface/package.dsv'
+[1.102s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/custom_interface/share/custom_interface/package.sh'
+[1.102s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/custom_interface/share/custom_interface/package.bash'
+[1.102s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/custom_interface/share/custom_interface/package.zsh'
+[1.102s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/saifa/Desktop/Fun4/install/custom_interface/share/colcon-core/packages/custom_interface)
+[1.103s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.103s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.103s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.103s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.108s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.108s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.108s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.118s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.119s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/saifa/Desktop/Fun4/install/local_setup.ps1'
+[1.120s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/saifa/Desktop/Fun4/install/_local_setup_util_ps1.py'
+[1.121s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/saifa/Desktop/Fun4/install/setup.ps1'
+[1.123s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/saifa/Desktop/Fun4/install/local_setup.sh'
+[1.124s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/saifa/Desktop/Fun4/install/_local_setup_util_sh.py'
+[1.124s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/saifa/Desktop/Fun4/install/setup.sh'
+[1.127s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/saifa/Desktop/Fun4/install/local_setup.bash'
+[1.127s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/saifa/Desktop/Fun4/install/setup.bash'
+[1.129s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/saifa/Desktop/Fun4/install/local_setup.zsh'
+[1.130s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/saifa/Desktop/Fun4/install/setup.zsh'

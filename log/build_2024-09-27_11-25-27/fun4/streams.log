@@ -1,0 +1,59 @@
+[0.014s] Invoking command in '/home/saifa/Desktop/Fun4/build/fun4': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --build /home/saifa/Desktop/Fun4/build/fun4 -- -j16 -l16
+[0.045s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.175s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.198s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.199s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.203s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.211s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.224s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.251s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.254s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.366s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.403s] -- Found rclpy: 3.3.14 (/opt/ros/humble/share/rclpy/cmake)
+[0.533s] -- Configuring done
+[0.544s] -- Generating done
+[0.545s] -- Build files have been written to: /home/saifa/Desktop/Fun4/build/fun4
+[0.577s] [35m[1mConsolidate compiler generated dependencies of target cpp_node_test[0m
+[0.592s] [100%] Built target cpp_node_test
+[0.599s] [100%] Built target ament_cmake_python_copy_fun4
+[0.821s] running egg_info
+[0.821s] writing fun4.egg-info/PKG-INFO
+[0.821s] writing dependency_links to fun4.egg-info/dependency_links.txt
+[0.822s] writing top-level names to fun4.egg-info/top_level.txt
+[0.823s] reading manifest file 'fun4.egg-info/SOURCES.txt'
+[0.828s] writing manifest file 'fun4.egg-info/SOURCES.txt'
+[0.855s] [100%] Built target ament_cmake_python_build_fun4_egg
+[0.869s] Invoked command in '/home/saifa/Desktop/Fun4/build/fun4' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --build /home/saifa/Desktop/Fun4/build/fun4 -- -j16 -l16
+[0.924s] Invoking command in '/home/saifa/Desktop/Fun4/build/fun4': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --install /home/saifa/Desktop/Fun4/build/fun4
+[0.934s] -- Install configuration: ""
+[0.934s] -- Up-to-date: /home/saifa/Desktop/Fun4/install/fun4/share/fun4/environment/pythonpath.sh
+[0.934s] -- Installing: /home/saifa/Desktop/Fun4/install/fun4/share/fun4/environment/pythonpath.dsv
+[0.934s] -- Up-to-date: /home/saifa/Desktop/Fun4/install/fun4/local/lib/python3.10/dist-packages/fun4-0.0.0-py3.10.egg-info
+[0.934s] -- Installing: /home/saifa/Desktop/Fun4/install/fun4/local/lib/python3.10/dist-packages/fun4-0.0.0-py3.10.egg-info/top_level.txt
+[0.934s] -- Installing: /home/saifa/Desktop/Fun4/install/fun4/local/lib/python3.10/dist-packages/fun4-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.934s] -- Installing: /home/saifa/Desktop/Fun4/install/fun4/local/lib/python3.10/dist-packages/fun4-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.935s] -- Installing: /home/saifa/Desktop/Fun4/install/fun4/local/lib/python3.10/dist-packages/fun4-0.0.0-py3.10.egg-info/PKG-INFO
+[0.935s] -- Up-to-date: /home/saifa/Desktop/Fun4/install/fun4/local/lib/python3.10/dist-packages/fun4
+[0.935s] -- Up-to-date: /home/saifa/Desktop/Fun4/install/fun4/local/lib/python3.10/dist-packages/fun4/__init__.py
+[0.935s] -- Up-to-date: /home/saifa/Desktop/Fun4/install/fun4/local/lib/python3.10/dist-packages/fun4/dummy_module.py
+[0.972s] Listing '/home/saifa/Desktop/Fun4/install/fun4/local/lib/python3.10/dist-packages/fun4'...
+[0.975s] -- Up-to-date: /home/saifa/Desktop/Fun4/install/fun4/lib/fun4/dummy_script.py
+[0.975s] -- Installing: /home/saifa/Desktop/Fun4/install/fun4/lib/fun4/example_state.py
+[0.975s] -- Up-to-date: /home/saifa/Desktop/Fun4/install/fun4/lib/fun4/cpp_node_test
+[0.975s] -- Up-to-date: /home/saifa/Desktop/Fun4/install/fun4/share/fun4
+[0.976s] -- Up-to-date: /home/saifa/Desktop/Fun4/install/fun4/share/ament_index/resource_index/package_run_dependencies/fun4
+[0.976s] -- Installing: /home/saifa/Desktop/Fun4/install/fun4/share/ament_index/resource_index/parent_prefix_path/fun4
+[0.976s] -- Up-to-date: /home/saifa/Desktop/Fun4/install/fun4/share/fun4/environment/ament_prefix_path.sh
+[0.976s] -- Installing: /home/saifa/Desktop/Fun4/install/fun4/share/fun4/environment/ament_prefix_path.dsv
+[0.976s] -- Up-to-date: /home/saifa/Desktop/Fun4/install/fun4/share/fun4/environment/path.sh
+[0.976s] -- Installing: /home/saifa/Desktop/Fun4/install/fun4/share/fun4/environment/path.dsv
+[0.976s] -- Up-to-date: /home/saifa/Desktop/Fun4/install/fun4/share/fun4/local_setup.bash
+[0.976s] -- Up-to-date: /home/saifa/Desktop/Fun4/install/fun4/share/fun4/local_setup.sh
+[0.977s] -- Up-to-date: /home/saifa/Desktop/Fun4/install/fun4/share/fun4/local_setup.zsh
+[0.977s] -- Installing: /home/saifa/Desktop/Fun4/install/fun4/share/fun4/local_setup.dsv
+[0.977s] -- Installing: /home/saifa/Desktop/Fun4/install/fun4/share/fun4/package.dsv
+[0.977s] -- Up-to-date: /home/saifa/Desktop/Fun4/install/fun4/share/ament_index/resource_index/packages/fun4
+[0.977s] -- Up-to-date: /home/saifa/Desktop/Fun4/install/fun4/share/fun4/cmake/fun4Config.cmake
+[0.977s] -- Up-to-date: /home/saifa/Desktop/Fun4/install/fun4/share/fun4/cmake/fun4Config-version.cmake
+[0.977s] -- Up-to-date: /home/saifa/Desktop/Fun4/install/fun4/share/fun4/package.xml
+[0.979s] Invoked command in '/home/saifa/Desktop/Fun4/build/fun4' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --install /home/saifa/Desktop/Fun4/build/fun4

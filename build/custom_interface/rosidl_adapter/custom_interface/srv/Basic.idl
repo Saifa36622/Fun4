@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from custom_interface/srv/Basic.srv
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Bool.idl"
+#include "std_msgs/msg/Float64.idl"
+#include "std_msgs/msg/Int64.idl"
+
+module custom_interface {
+  module srv {
+    struct Basic_Request {
+      std_msgs::msg::Int64 mode;
+
+      std_msgs::msg::Float64 x;
+
+      std_msgs::msg::Float64 y;
+
+      std_msgs::msg::Float64 z;
+    };
+    struct Basic_Response {
+      std_msgs::msg::Bool success;
+    };
+  };
+};

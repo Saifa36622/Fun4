@@ -1,0 +1,335 @@
+[0.098s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.098s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7e6820d4d930>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7e6820d4d4e0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7e6820d4d4e0>>)
+[0.239s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.239s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.239s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.239s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.239s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.239s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.239s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/saifa/Desktop/Fun4'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(Part1) by extensions ['ignore', 'ignore_ament_install']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(Part1) by extension 'ignore'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(Part1) by extension 'ignore_ament_install'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(Part1) by extensions ['colcon_pkg']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(Part1) by extension 'colcon_pkg'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(Part1) by extensions ['colcon_meta']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(Part1) by extension 'colcon_meta'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(Part1) by extensions ['ros']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(Part1) by extension 'ros'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(Part1) by extensions ['cmake', 'python']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(Part1) by extension 'cmake'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(Part1) by extension 'python'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(Part1) by extensions ['python_setup_py']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(Part1) by extension 'python_setup_py'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description) by extension 'ignore_ament_install'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description) by extensions ['colcon_pkg']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description) by extension 'colcon_pkg'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description) by extensions ['colcon_meta']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description) by extension 'colcon_meta'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description) by extensions ['ros']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description) by extension 'ros'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description) by extensions ['cmake', 'python']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description) by extension 'cmake'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description) by extension 'python'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description) by extensions ['python_setup_py']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description) by extension 'python_setup_py'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/build) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/build) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/build) ignored
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/install) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/install) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/install) ignored
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/log) by extensions ['ignore', 'ignore_ament_install']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/log) by extension 'ignore'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/log) ignored
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/src) by extensions ['ignore', 'ignore_ament_install']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/src) by extension 'ignore'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/src) by extension 'ignore_ament_install'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/src) by extensions ['colcon_pkg']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/src) by extension 'colcon_pkg'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/src) by extensions ['colcon_meta']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/src) by extension 'colcon_meta'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/src) by extensions ['ros']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/src) by extension 'ros'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/src) by extensions ['cmake', 'python']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/src) by extension 'cmake'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/src) by extension 'python'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/src) by extensions ['python_setup_py']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/src) by extension 'python_setup_py'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/src/motorsim) by extensions ['ignore', 'ignore_ament_install']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/src/motorsim) by extension 'ignore'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/src/motorsim) by extension 'ignore_ament_install'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/src/motorsim) by extensions ['colcon_pkg']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/src/motorsim) by extension 'colcon_pkg'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/src/motorsim) by extensions ['colcon_meta']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/src/motorsim) by extension 'colcon_meta'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/src/motorsim) by extensions ['ros']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/src/motorsim) by extension 'ros'
+[0.253s] DEBUG:colcon.colcon_core.package_identification:Package 'src/example_description/src/motorsim' with type 'ros.ament_cmake' and name 'motorsim'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/src/motorsim_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/src/motorsim_interfaces) by extension 'ignore'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/src/motorsim_interfaces) by extension 'ignore_ament_install'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/src/motorsim_interfaces) by extensions ['colcon_pkg']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/src/motorsim_interfaces) by extension 'colcon_pkg'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/src/motorsim_interfaces) by extensions ['colcon_meta']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/src/motorsim_interfaces) by extension 'colcon_meta'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/src/motorsim_interfaces) by extensions ['ros']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description/src/motorsim_interfaces) by extension 'ros'
+[0.254s] DEBUG:colcon.colcon_core.package_identification:Package 'src/example_description/src/motorsim_interfaces' with type 'ros.ament_cmake' and name 'motorsim_interfaces'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/fun4) by extensions ['ignore', 'ignore_ament_install']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/fun4) by extension 'ignore'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/fun4) by extension 'ignore_ament_install'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/fun4) by extensions ['colcon_pkg']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/fun4) by extension 'colcon_pkg'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/fun4) by extensions ['colcon_meta']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/fun4) by extension 'colcon_meta'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/fun4) by extensions ['ros']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/fun4) by extension 'ros'
+[0.255s] DEBUG:colcon.colcon_core.package_identification:Package 'src/fun4' with type 'ros.ament_cmake' and name 'fun4'
+[0.255s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.255s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.255s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.255s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.255s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.273s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.273s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.276s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/saifa/Desktop/Fun4/install
+[0.277s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 39 installed packages in /home/saifa/mc_ros_ws/install
+[0.277s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/saifa/Desktop/solar/install
+[0.278s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 12 installed packages in /home/saifa/Desktop/ros2_w2_ws/install
+[0.279s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 290 installed packages in /opt/ros/humble
+[0.288s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'fun4' build argument 'cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'fun4' build argument 'cmake_target' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'fun4' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'fun4' build argument 'cmake_clean_cache' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'fun4' build argument 'cmake_clean_first' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'fun4' build argument 'cmake_force_configure' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'fun4' build argument 'ament_cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'fun4' build argument 'catkin_cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'fun4' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.318s] DEBUG:colcon.colcon_core.verb:Building package 'fun4' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/saifa/Desktop/Fun4/build/fun4', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/saifa/Desktop/Fun4/install/fun4', 'merge_install': False, 'path': '/home/saifa/Desktop/Fun4/src/fun4', 'symlink_install': False, 'test_result_base': None}
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'motorsim' build argument 'cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'motorsim' build argument 'cmake_target' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'motorsim' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'motorsim' build argument 'cmake_clean_cache' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'motorsim' build argument 'cmake_clean_first' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'motorsim' build argument 'cmake_force_configure' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'motorsim' build argument 'ament_cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'motorsim' build argument 'catkin_cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'motorsim' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.319s] DEBUG:colcon.colcon_core.verb:Building package 'motorsim' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/saifa/Desktop/Fun4/build/motorsim', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/saifa/Desktop/Fun4/install/motorsim', 'merge_install': False, 'path': '/home/saifa/Desktop/Fun4/src/example_description/src/motorsim', 'symlink_install': False, 'test_result_base': None}
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'motorsim_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'motorsim_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'motorsim_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'motorsim_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'motorsim_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'motorsim_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'motorsim_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'motorsim_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'motorsim_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.319s] DEBUG:colcon.colcon_core.verb:Building package 'motorsim_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/saifa/Desktop/Fun4/build/motorsim_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/saifa/Desktop/Fun4/install/motorsim_interfaces', 'merge_install': False, 'path': '/home/saifa/Desktop/Fun4/src/example_description/src/motorsim_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.319s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.320s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.320s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/saifa/Desktop/Fun4/src/fun4' with build type 'ament_cmake'
+[0.320s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/saifa/Desktop/Fun4/src/fun4'
+[0.322s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.322s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.322s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.328s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/saifa/Desktop/Fun4/src/example_description/src/motorsim' with build type 'ament_cmake'
+[0.328s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/saifa/Desktop/Fun4/src/example_description/src/motorsim'
+[0.329s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.329s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.335s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/saifa/Desktop/Fun4/src/example_description/src/motorsim_interfaces' with build type 'ament_cmake'
+[0.335s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/saifa/Desktop/Fun4/src/example_description/src/motorsim_interfaces'
+[0.335s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.335s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.344s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/saifa/Desktop/Fun4/build/fun4': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --build /home/saifa/Desktop/Fun4/build/fun4 -- -j16 -l16
+[0.349s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/saifa/Desktop/Fun4/build/motorsim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake /home/saifa/Desktop/Fun4/src/example_description/src/motorsim -DCMAKE_INSTALL_PREFIX=/home/saifa/Desktop/Fun4/install/motorsim
+[0.351s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/saifa/Desktop/Fun4/build/motorsim_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake /home/saifa/Desktop/Fun4/src/example_description/src/motorsim_interfaces -DCMAKE_INSTALL_PREFIX=/home/saifa/Desktop/Fun4/install/motorsim_interfaces
+[0.714s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/saifa/Desktop/Fun4/build/fun4' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --build /home/saifa/Desktop/Fun4/build/fun4 -- -j16 -l16
+[0.775s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/saifa/Desktop/Fun4/build/fun4': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --install /home/saifa/Desktop/Fun4/build/fun4
+[0.832s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fun4)
+[0.832s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/saifa/Desktop/Fun4/build/fun4' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --install /home/saifa/Desktop/Fun4/build/fun4
+[0.835s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/fun4' for CMake module files
+[0.835s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/fun4' for CMake config files
+[0.835s] Level 1:colcon.colcon_core.shell:create_environment_hook('fun4', 'cmake_prefix_path')
+[0.835s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/saifa/Desktop/Fun4/install/fun4/share/fun4/hook/cmake_prefix_path.ps1'
+[0.836s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/saifa/Desktop/Fun4/install/fun4/share/fun4/hook/cmake_prefix_path.dsv'
+[0.836s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/saifa/Desktop/Fun4/install/fun4/share/fun4/hook/cmake_prefix_path.sh'
+[0.837s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/fun4/lib'
+[0.837s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/fun4/bin'
+[0.837s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/fun4/lib/pkgconfig/fun4.pc'
+[0.837s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/fun4/lib/python3.10/site-packages'
+[0.837s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/fun4/bin'
+[0.837s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/fun4/share/fun4/package.ps1'
+[0.838s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/saifa/Desktop/Fun4/install/fun4/share/fun4/package.dsv'
+[0.838s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/fun4/share/fun4/package.sh'
+[0.839s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/fun4/share/fun4/package.bash'
+[0.839s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/fun4/share/fun4/package.zsh'
+[0.840s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/saifa/Desktop/Fun4/install/fun4/share/colcon-core/packages/fun4)
+[0.888s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fun4)
+[0.889s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/fun4' for CMake module files
+[0.889s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/fun4' for CMake config files
+[0.889s] Level 1:colcon.colcon_core.shell:create_environment_hook('fun4', 'cmake_prefix_path')
+[0.889s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/saifa/Desktop/Fun4/install/fun4/share/fun4/hook/cmake_prefix_path.ps1'
+[0.890s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/saifa/Desktop/Fun4/install/fun4/share/fun4/hook/cmake_prefix_path.dsv'
+[0.890s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/saifa/Desktop/Fun4/install/fun4/share/fun4/hook/cmake_prefix_path.sh'
+[0.890s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/fun4/lib'
+[0.890s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/fun4/bin'
+[0.891s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/fun4/lib/pkgconfig/fun4.pc'
+[0.891s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/fun4/lib/python3.10/site-packages'
+[0.891s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/fun4/bin'
+[0.891s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/fun4/share/fun4/package.ps1'
+[0.891s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/saifa/Desktop/Fun4/install/fun4/share/fun4/package.dsv'
+[0.892s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/fun4/share/fun4/package.sh'
+[0.892s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/fun4/share/fun4/package.bash'
+[0.892s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/fun4/share/fun4/package.zsh'
+[0.893s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/saifa/Desktop/Fun4/install/fun4/share/colcon-core/packages/fun4)
+[1.946s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/saifa/Desktop/Fun4/build/motorsim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake /home/saifa/Desktop/Fun4/src/example_description/src/motorsim -DCMAKE_INSTALL_PREFIX=/home/saifa/Desktop/Fun4/install/motorsim
+[1.947s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/saifa/Desktop/Fun4/build/motorsim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --build /home/saifa/Desktop/Fun4/build/motorsim -- -j16 -l16
+[2.373s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/saifa/Desktop/Fun4/build/motorsim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --build /home/saifa/Desktop/Fun4/build/motorsim -- -j16 -l16
+[2.423s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/saifa/Desktop/Fun4/build/motorsim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --install /home/saifa/Desktop/Fun4/build/motorsim
+[2.453s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/saifa/Desktop/Fun4/build/motorsim_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake /home/saifa/Desktop/Fun4/src/example_description/src/motorsim_interfaces -DCMAKE_INSTALL_PREFIX=/home/saifa/Desktop/Fun4/install/motorsim_interfaces
+[2.454s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/saifa/Desktop/Fun4/build/motorsim_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --build /home/saifa/Desktop/Fun4/build/motorsim_interfaces -- -j16 -l16
+[2.490s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motorsim)
+[2.490s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/motorsim' for CMake module files
+[2.491s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/saifa/Desktop/Fun4/build/motorsim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --install /home/saifa/Desktop/Fun4/build/motorsim
+[2.491s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/motorsim' for CMake config files
+[2.491s] Level 1:colcon.colcon_core.shell:create_environment_hook('motorsim', 'cmake_prefix_path')
+[2.492s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/saifa/Desktop/Fun4/install/motorsim/share/motorsim/hook/cmake_prefix_path.ps1'
+[2.492s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/saifa/Desktop/Fun4/install/motorsim/share/motorsim/hook/cmake_prefix_path.dsv'
+[2.492s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/saifa/Desktop/Fun4/install/motorsim/share/motorsim/hook/cmake_prefix_path.sh'
+[2.493s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/motorsim/lib'
+[2.493s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/motorsim/bin'
+[2.493s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/motorsim/lib/pkgconfig/motorsim.pc'
+[2.493s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/motorsim/lib/python3.10/site-packages'
+[2.493s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/motorsim/bin'
+[2.493s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/motorsim/share/motorsim/package.ps1'
+[2.494s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/saifa/Desktop/Fun4/install/motorsim/share/motorsim/package.dsv'
+[2.494s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/motorsim/share/motorsim/package.sh'
+[2.494s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/motorsim/share/motorsim/package.bash'
+[2.494s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/motorsim/share/motorsim/package.zsh'
+[2.495s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/saifa/Desktop/Fun4/install/motorsim/share/colcon-core/packages/motorsim)
+[2.541s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motorsim)
+[2.542s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/motorsim' for CMake module files
+[2.542s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/motorsim' for CMake config files
+[2.543s] Level 1:colcon.colcon_core.shell:create_environment_hook('motorsim', 'cmake_prefix_path')
+[2.543s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/saifa/Desktop/Fun4/install/motorsim/share/motorsim/hook/cmake_prefix_path.ps1'
+[2.544s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/saifa/Desktop/Fun4/install/motorsim/share/motorsim/hook/cmake_prefix_path.dsv'
+[2.544s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/saifa/Desktop/Fun4/install/motorsim/share/motorsim/hook/cmake_prefix_path.sh'
+[2.544s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/motorsim/lib'
+[2.545s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/motorsim/bin'
+[2.545s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/motorsim/lib/pkgconfig/motorsim.pc'
+[2.545s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/motorsim/lib/python3.10/site-packages'
+[2.545s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/motorsim/bin'
+[2.545s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/motorsim/share/motorsim/package.ps1'
+[2.546s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/saifa/Desktop/Fun4/install/motorsim/share/motorsim/package.dsv'
+[2.546s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/motorsim/share/motorsim/package.sh'
+[2.546s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/motorsim/share/motorsim/package.bash'
+[2.547s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/motorsim/share/motorsim/package.zsh'
+[2.547s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/saifa/Desktop/Fun4/install/motorsim/share/colcon-core/packages/motorsim)
+[4.282s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/saifa/Desktop/Fun4/build/motorsim_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --build /home/saifa/Desktop/Fun4/build/motorsim_interfaces -- -j16 -l16
+[4.420s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/saifa/Desktop/Fun4/build/motorsim_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --install /home/saifa/Desktop/Fun4/build/motorsim_interfaces
+[4.497s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motorsim_interfaces)
+[4.498s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/motorsim_interfaces' for CMake module files
+[4.498s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/saifa/Desktop/Fun4/build/motorsim_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saifa/mc_ros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --install /home/saifa/Desktop/Fun4/build/motorsim_interfaces
+[4.499s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/motorsim_interfaces' for CMake config files
+[4.499s] Level 1:colcon.colcon_core.shell:create_environment_hook('motorsim_interfaces', 'cmake_prefix_path')
+[4.499s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/saifa/Desktop/Fun4/install/motorsim_interfaces/share/motorsim_interfaces/hook/cmake_prefix_path.ps1'
+[4.499s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/saifa/Desktop/Fun4/install/motorsim_interfaces/share/motorsim_interfaces/hook/cmake_prefix_path.dsv'
+[4.499s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/saifa/Desktop/Fun4/install/motorsim_interfaces/share/motorsim_interfaces/hook/cmake_prefix_path.sh'
+[4.500s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/motorsim_interfaces/lib'
+[4.500s] Level 1:colcon.colcon_core.shell:create_environment_hook('motorsim_interfaces', 'ld_library_path_lib')
+[4.500s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/saifa/Desktop/Fun4/install/motorsim_interfaces/share/motorsim_interfaces/hook/ld_library_path_lib.ps1'
+[4.500s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/saifa/Desktop/Fun4/install/motorsim_interfaces/share/motorsim_interfaces/hook/ld_library_path_lib.dsv'
+[4.500s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/saifa/Desktop/Fun4/install/motorsim_interfaces/share/motorsim_interfaces/hook/ld_library_path_lib.sh'
+[4.501s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/motorsim_interfaces/bin'
+[4.501s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/motorsim_interfaces/lib/pkgconfig/motorsim_interfaces.pc'
+[4.501s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/motorsim_interfaces/lib/python3.10/site-packages'
+[4.501s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/motorsim_interfaces/bin'
+[4.501s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/motorsim_interfaces/share/motorsim_interfaces/package.ps1'
+[4.502s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/saifa/Desktop/Fun4/install/motorsim_interfaces/share/motorsim_interfaces/package.dsv'
+[4.502s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/motorsim_interfaces/share/motorsim_interfaces/package.sh'
+[4.502s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/motorsim_interfaces/share/motorsim_interfaces/package.bash'
+[4.502s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/motorsim_interfaces/share/motorsim_interfaces/package.zsh'
+[4.503s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/saifa/Desktop/Fun4/install/motorsim_interfaces/share/colcon-core/packages/motorsim_interfaces)
+[4.656s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motorsim_interfaces)
+[4.656s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/motorsim_interfaces' for CMake module files
+[4.657s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/motorsim_interfaces' for CMake config files
+[4.657s] Level 1:colcon.colcon_core.shell:create_environment_hook('motorsim_interfaces', 'cmake_prefix_path')
+[4.657s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/saifa/Desktop/Fun4/install/motorsim_interfaces/share/motorsim_interfaces/hook/cmake_prefix_path.ps1'
+[4.658s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/saifa/Desktop/Fun4/install/motorsim_interfaces/share/motorsim_interfaces/hook/cmake_prefix_path.dsv'
+[4.659s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/saifa/Desktop/Fun4/install/motorsim_interfaces/share/motorsim_interfaces/hook/cmake_prefix_path.sh'
+[4.659s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/motorsim_interfaces/lib'
+[4.660s] Level 1:colcon.colcon_core.shell:create_environment_hook('motorsim_interfaces', 'ld_library_path_lib')
+[4.660s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/saifa/Desktop/Fun4/install/motorsim_interfaces/share/motorsim_interfaces/hook/ld_library_path_lib.ps1'
+[4.660s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/saifa/Desktop/Fun4/install/motorsim_interfaces/share/motorsim_interfaces/hook/ld_library_path_lib.dsv'
+[4.661s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/saifa/Desktop/Fun4/install/motorsim_interfaces/share/motorsim_interfaces/hook/ld_library_path_lib.sh'
+[4.661s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/motorsim_interfaces/bin'
+[4.661s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/motorsim_interfaces/lib/pkgconfig/motorsim_interfaces.pc'
+[4.661s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/motorsim_interfaces/lib/python3.10/site-packages'
+[4.662s] Level 1:colcon.colcon_core.environment:checking '/home/saifa/Desktop/Fun4/install/motorsim_interfaces/bin'
+[4.662s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/motorsim_interfaces/share/motorsim_interfaces/package.ps1'
+[4.662s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/saifa/Desktop/Fun4/install/motorsim_interfaces/share/motorsim_interfaces/package.dsv'
+[4.663s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/motorsim_interfaces/share/motorsim_interfaces/package.sh'
+[4.663s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/motorsim_interfaces/share/motorsim_interfaces/package.bash'
+[4.663s] INFO:colcon.colcon_core.shell:Creating package script '/home/saifa/Desktop/Fun4/install/motorsim_interfaces/share/motorsim_interfaces/package.zsh'
+[4.664s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/saifa/Desktop/Fun4/install/motorsim_interfaces/share/colcon-core/packages/motorsim_interfaces)
+[4.664s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.664s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.664s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.664s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.670s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.670s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.670s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.680s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.680s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/saifa/Desktop/Fun4/install/local_setup.ps1'
+[4.681s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/saifa/Desktop/Fun4/install/_local_setup_util_ps1.py'
+[4.683s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/saifa/Desktop/Fun4/install/setup.ps1'
+[4.686s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/saifa/Desktop/Fun4/install/local_setup.sh'
+[4.686s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/saifa/Desktop/Fun4/install/_local_setup_util_sh.py'
+[4.687s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/saifa/Desktop/Fun4/install/setup.sh'
+[4.691s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/saifa/Desktop/Fun4/install/local_setup.bash'
+[4.692s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/saifa/Desktop/Fun4/install/setup.bash'
+[4.695s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/saifa/Desktop/Fun4/install/local_setup.zsh'
+[4.695s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/saifa/Desktop/Fun4/install/setup.zsh'
