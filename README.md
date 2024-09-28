@@ -90,6 +90,46 @@ as the image ,this node will wait for the request from the controller node in to
 
 ## How to use each mode 
 
+### mode 1 
+
+first you need to be in the workspace and then run this command to open the launch file 
+
+```
+ros2 launch example_description fun.launch.py
+```
+
+wait 2 - 3 secound the rviz will show this picture 
+
+![image](https://github.com/user-attachments/assets/fc809115-bd51-4414-b8a2-a0e1106de8ad)
+
+So to use mode 1 you need to use this command in anoter source terminal as example 
+
+```
+ros2 service call /Mode custom_interface/srv/Basic "mode:
+  data: 1
+x:
+  data: -0.035594417844439424
+y:
+  data: 0.0996378227856056
+z:
+  data: 0.6775170866211754" 
+```
+
+if you input the possible position ,The service will respon **True**
+
+![image](https://github.com/user-attachments/assets/941ba878-9803-4888-94af-600721d5d6a6)
+
+and in the lauch file terminal the node will log the solution like the image below 
+
+![image](https://github.com/user-attachments/assets/1cd619d2-451d-48aa-9d81-86b99e09c3f4)
+
+and the robot will start to move in to the input solution 
+
+![image](https://github.com/user-attachments/assets/d2fe5cdf-c64e-44fe-9753-efc6b7e145d7)
+
+video output mode 1 (click the image)
+
+[![Watch the video](https://github.com/user-attachments/assets/d2fe5cdf-c64e-44fe-9753-efc6b7e145d7)](https://youtu.be/5NdAb9AZTrY?si=sJGyIGtZzVdUiNK6)
 
 
 
