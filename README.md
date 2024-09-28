@@ -127,6 +127,10 @@ and the robot will start to move in to the input solution
 
 ![image](https://github.com/user-attachments/assets/d2fe5cdf-c64e-44fe-9753-efc6b7e145d7)
 
+but if the position is impossible ,The service will respon **False** , and the robot will stand still
+
+![image](https://github.com/user-attachments/assets/b69bca30-bd3c-4e8c-9b5e-bbeb3b267535)
+
 video output mode 1 (click the image)
 
 [![Watch the video](https://github.com/user-attachments/assets/d2fe5cdf-c64e-44fe-9753-efc6b7e145d7)](https://youtu.be/5NdAb9AZTrY?si=sJGyIGtZzVdUiNK6)
