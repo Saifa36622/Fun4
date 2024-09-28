@@ -12,6 +12,8 @@ from math import pi
 from custom_interface.srv import Basic
 from sensor_msgs.msg import JointState
 import time
+
+from geometry_msgs.msg import Twist
 class controller(Node):
     def __init__(self):
         super().__init__('controller')
@@ -27,6 +29,12 @@ class controller(Node):
         self.request_target = self.create_publisher(Int64,'/request_target',10)
         self.create_subscription(Int64,'/request_target',self.request_target_callback,10)
 
+        self.create_subscription(Twist,'/cmd_vel',self.tele_op_callback,10)
+        self.create_subscription(Twist,'/cmd_vel_end',self.tele_op_end_callback,10)
+
+        self.before_mode = 0
+        self.cmd = [0,0,0,0,0,0]
+        self.cmd_end = [0,0,0]
         self.stop_move = 0
         self.auto_mode = 0
         self.mode = 0
@@ -70,33 +78,48 @@ class controller(Node):
                 
             return response
         
+        if self.mode == 2 :
+            if self.x == 1 :
+                self._logger.info("Start teleop mode base on Base frame")
+                response.success.data = True
+            elif self.x == 2 :
+                self._logger.info("Start teleop mode base on End-effector frame")
+                response.success.data = True
+            else :
+                self._logger.error("Please Enter the mode that you want to Tele-op in variable x (mode 1 = teleop base on Base frame ,mode 2 = teleop base on end effector frame)")
+                self._logger.error("Please re-enter the mode")
+                response.success.data = False
+
+            
+            return response
+        
 
         self._logger.info(f"successfull change to mode {self.mode}")
         response.success.data = True
         return response
     
-    # def wrap_angle(self, angle):
-    #     if angle > 3.14 or angle < 0:
-    #         angle = angle % 3.14
-    #     return angle
+
 
     def move_joint(self):
         msg = JointState()
         msg.header.stamp = self.get_clock().now().to_msg()
 
-        if (self.target_joint_angles[0] == 0 and self.target_joint_angles[1] == 0 and self.target_joint_angles[2] == 0 and self.q[0] == 0 and self.q[1] == 0 and self.q[2] == 0):
-            return
-
-        self.q_d[0] = self.gain * (self.target_joint_angles[0] - self.q[0])
-        self.q_d[1] = self.gain * (self.target_joint_angles[1] - self.q[1])
-        self.q_d[2] = self.gain * (self.target_joint_angles[2] - self.q[2])
-
-
-        self.q[0] = self.q[0] + (self.q_d[0] * self.dt)
-        self.q[1] = self.q[1] + (self.q_d[1] * self.dt)
-        self.q[2] = self.q[2] + (self.q_d[2] * self.dt)
         
-        # self.q = [self.wrap_angle(angle) for angle in self.q]
+
+        if self.mode == 2 :
+            self.q[0] = self.q[0] + (self.q_d[0] * self.dt)
+            self.q[1] = self.q[1] + (self.q_d[1] * self.dt)
+            self.q[2] = self.q[2] + (self.q_d[2] * self.dt)
+        elif (self.target_joint_angles[0] == 0 and self.target_joint_angles[1] == 0 and self.target_joint_angles[2] == 0 and self.q[0] == 0 and self.q[1] == 0 and self.q[2] == 0):
+            return
+        else :
+            self.q_d[0] = self.gain * (self.target_joint_angles[0] - self.q[0])
+            self.q_d[1] = self.gain * (self.target_joint_angles[1] - self.q[1])
+            self.q_d[2] = self.gain * (self.target_joint_angles[2] - self.q[2])
+            self.q[0] = self.q[0] + (self.q_d[0] * self.dt)
+            self.q[1] = self.q[1] + (self.q_d[1] * self.dt)
+            self.q[2] = self.q[2] + (self.q_d[2] * self.dt)
+        
 
         for i in range(len(self.q)):
             msg.position.append(self.q[i])
@@ -167,6 +190,37 @@ class controller(Node):
                 self.request_target.publish(msg)
                 # time.sleep(2)
 
+    def tele_op_callback(self,msg:Twist):
+        self.cmd[0] = msg.linear.x
+        self.cmd[1] = msg.linear.y
+        self.cmd[2] = msg.linear.z
+        self.cmd[3] = msg.angular.z
+        self.cmd[4] = msg.angular.z
+        self.cmd[5] = msg.angular.z
+
+        Jacobian = self.robot.jacob0(self.q)
+
+        Jacobian_inv = np.linalg.pinv(Jacobian)
+
+        q_dot_jaco = np.dot(Jacobian_inv, self.cmd)
+
+        self.q_d = q_dot_jaco.flatten().tolist() 
+
+
+
+
+
+    def tele_op_end_callback(self,msg:Twist):
+        self.cmd_end[0] = msg.linear.x
+        self.cmd_end[1] = msg.linear.y
+        self.cmd_end[2] = msg.linear.z
+
+
+    def teleop_run(self):
+        if self.x == 1 :
+            self.q_d = self.cmd
+        elif self.x == 2 :
+            self.q_d = self.cmd_end
 
             
 
@@ -176,10 +230,12 @@ class controller(Node):
     def timer_callback(self):
         
         if self.mode == 1 :
-            # self.Inverse_pose_mode()
             pass
         elif self.mode == 2 :
+
+            # self.teleop_run()
             pass
+
         elif self.mode == 3 :
             self.Autorun()
         self.move_joint()
