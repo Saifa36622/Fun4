@@ -112,7 +112,7 @@ class controller(Node):
             self.q[0] = self.q[0] + (self.q_d[0] * self.dt)
             self.q[1] = self.q[1] + (self.q_d[1] * self.dt)
             self.q[2] = self.q[2] + (self.q_d[2] * self.dt)
-        elif (self.target_joint_angles[0] == 0 and self.target_joint_angles[1] == 0 and self.target_joint_angles[2] == 0 and self.q[0] == 0 and self.q[1] == 0 and self.q[2] == 0):
+        elif (self.target_joint_angles[0] == 0 and self.target_joint_angles[1] == 0 and self.target_joint_angles[2] == 0 and self.q[0] == 0 and self.q[1] == 0 and self.q[2] == 0 and self.mode != 0):
             return
         else :
             self.q_d[0] = self.gain * (self.target_joint_angles[0] - self.q[0])
@@ -204,7 +204,7 @@ class controller(Node):
             Jacobian = self.robot.jacob0(self.q)
         elif self.x == 2 :
             Jacobian = self.robot.jacobe(self.q)
-            
+
         Jacobian_inv = np.linalg.pinv(Jacobian)
 
         q_dot_jaco = np.dot(Jacobian_inv, self.cmd)
