@@ -179,7 +179,7 @@ and when the command successful the service will respond **True** and the log wi
 
 ![image](https://github.com/user-attachments/assets/eadb6e8c-5c9c-4b4a-8b94-299a64cbf282)
 
-but if the data is not 1 ,2 the service will respond **False** and the log will show the error
+but if the data is not 1 or 2 the service will respond **False** and the log will show the error
 
 ![image](https://github.com/user-attachments/assets/1bdcd25a-3426-4ae8-b090-1d6de8ebd1bf)
 
@@ -189,11 +189,12 @@ To use mode 2 ,simply change the mode number to 2 and the value x will determine
  - x = 1 -> refference from base axis 
  - x = 2 -> refference from end_effector axis
 
-then use command 
+then use command (run this command after lauch the lauch file to avoid possible error)
 
 ```
 ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ```
+
 then the robot will move as the teleopkey press 
 
 
