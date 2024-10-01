@@ -152,7 +152,7 @@ same as mode 1 ,first you need to be in the workspace and then run this command 
 ```
 ros2 launch example_description fun.launch.py
 ```
-and then use the command 
+and then use the command (run the mode that will move base on base frame)
 
 ```
 ros2 service call /Mode custom_interface/srv/Basic "mode:
@@ -164,7 +164,7 @@ y:
 z:
   data: 0.0" 
 ```
-or 
+or (run the mode that will move base on end-effector frame)
 ```
 ros2 service call /Mode custom_interface/srv/Basic "mode:
   data: 2
@@ -237,7 +237,29 @@ as you run each mode after the
 ```
 ros2 launch example_description fun.launch.py
 ```
-you can use this command to visualize the position of the end_effector
+you can use this command to visualize the position of the end_effector by open the rviz2 on another terminal using this cmd
 
+```
+rviz2
+```
+
+then click the add button on the bottom left connor
+
+![image](https://github.com/user-attachments/assets/c85591ab-6bcb-4c05-bdfb-9a23c488ca77)
+
+the select the By topic on the upper part and then select the /end_effector (Pose)
+
+![image](https://github.com/user-attachments/assets/63f7e614-b416-45b3-92c2-e8155323672a)
+
+then select the reffecrence frame as you desire
+
+![image](https://github.com/user-attachments/assets/45c282a0-45a7-4826-8bc3-8e8b4f9eebae)
+
+
+video output of the end_effector visualisation (click the image)
+
+ps. in the clip will use mode 3 to demo 
+
+[![Watch the video](https://github.com/user-attachments/assets/d2fe5cdf-c64e-44fe-9753-efc6b7e145d7)](https://www.youtube.com/watch?v=D7Mvqn28bHQ)
 
 
