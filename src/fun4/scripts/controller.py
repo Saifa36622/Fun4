@@ -12,8 +12,8 @@ from math import pi
 from custom_interface.srv import Basic
 from sensor_msgs.msg import JointState
 import time
-
 from geometry_msgs.msg import Twist
+
 class controller(Node):
     def __init__(self):
         super().__init__('controller')
@@ -22,6 +22,7 @@ class controller(Node):
 
         self.mode_server = self.create_service(Basic,"/Mode",self.Mode_callback)
 
+        # self.timer2 = self.create_timer(0.1, self.timer2_callback)
 
         self.joint_pub = self.create_publisher(JointState, "/joint_states", 10)
         self.end_f_pub = self.create_publisher(PoseStamped, "/end_effector", 10)
@@ -47,6 +48,7 @@ class controller(Node):
         self.gain = 1.2
         self.name = ["joint_1", "joint_2", "joint_3"]
         self.target_joint_angles = [0,0,0]
+        self.timer_end_f = 0
 
         self.robot = rtb.DHRobot(
         [
@@ -130,12 +132,22 @@ class controller(Node):
     
 
     def end_f(self):
+
         self.end_effect_pose_Raw = self.robot.fkine(self.q)
+
         self.end_effect_pose = self.end_effect_pose_Raw.t
+        
+        
         msg = PoseStamped()
+
+        msg.header.stamp = self.get_clock().now().to_msg() 
+        
+        msg.header.frame_id = "link_0" 
+
         msg.pose.position.x = self.end_effect_pose[0]
         msg.pose.position.y = self.end_effect_pose[1]
         msg.pose.position.z = self.end_effect_pose[2]
+        
 
         self.end_f_pub.publish(msg)
 
@@ -193,6 +205,7 @@ class controller(Node):
                 # time.sleep(2)
 
     def tele_op_callback(self,msg:Twist):
+
         self.cmd[0] = msg.linear.x
         self.cmd[1] = msg.linear.y
         self.cmd[2] = msg.linear.z
@@ -205,14 +218,12 @@ class controller(Node):
         elif self.x == 2 :
             Jacobian = self.robot.jacobe(self.q)
 
+
         Jacobian_inv = np.linalg.pinv(Jacobian)
 
         q_dot_jaco = np.dot(Jacobian_inv, self.cmd)
 
         self.q_d = q_dot_jaco.flatten().tolist() 
-
-
-
 
 
     # def tele_op_end_callback(self,msg:Twist):
@@ -245,7 +256,7 @@ class controller(Node):
 
 
     def timer_callback(self):
-        
+        self.timer_end_f += 1
         if self.mode == 1 :
             pass
         elif self.mode == 2 :
@@ -256,6 +267,13 @@ class controller(Node):
             self.Autorun()
         self.move_joint()
         self.end_f()
+
+        # if self.timer_end_f % 1000 == 0: # HAl_timestamp
+        # self.end_f()
+
+        # if self.timer_end_f >= 100000:
+        #     self.timer_end_f = 0
+        
         
 
 def main(args=None):

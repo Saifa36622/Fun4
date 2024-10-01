@@ -34,7 +34,8 @@ class Random(Node):
     
     def request_target_callback(self,msg:Int64):
         if msg.data == 1 : 
-            self.q0 = np.random.uniform(-np.pi, np.pi, self.robot.n)
+
+            self.q0 = np.random.uniform(0,pi*2, self.robot.n)
 
             self.fk = self.robot.fkine(self.q0)
 
