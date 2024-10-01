@@ -255,6 +255,10 @@ then select the reffecrence frame as you desire
 
 ![image](https://github.com/user-attachments/assets/45c282a0-45a7-4826-8bc3-8e8b4f9eebae)
 
+then the position of the end effector will apear on the rviz2 
+
+![image](https://github.com/user-attachments/assets/763167ca-a598-47ed-90fd-2d072cc9d29a)
+
 
 video output of the end_effector visualisation (click the image)
 
