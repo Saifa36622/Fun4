@@ -35,13 +35,18 @@ class Random(Node):
     def request_target_callback(self,msg:Int64):
         if msg.data == 1 : 
 
-            self.q0 = np.random.uniform(0,pi*2, self.robot.n)
+            self.q0 = np.random.uniform(-pi,pi, self.robot.n)
 
             self.fk = self.robot.fkine(self.q0)
 
             self.fk_sol = self.fk.t
 
             msg_pub = PoseStamped()
+
+            msg_pub.header.stamp = self.get_clock().now().to_msg() 
+        
+            msg_pub.header.frame_id = "link_0" 
+
             msg_pub.pose.position.x = self.fk_sol[0]
             msg_pub.pose.position.y = self.fk_sol[1]
             msg_pub.pose.position.z = self.fk_sol[2]

@@ -45,7 +45,7 @@ class controller(Node):
         self.q = [0.0, 0.0, 0.0]
         self.cmd_vel = [0.0, 0.0, 0.0]
         self.q_d = [0.0, 0.0, 0.0] # q that need to change 
-        self.gain = 1.2
+        self.gain = 5
         self.name = ["joint_1", "joint_2", "joint_3"]
         self.target_joint_angles = [0,0,0]
         self.timer_end_f = 0
@@ -104,7 +104,11 @@ class controller(Node):
     
 
 
+    def wrap_to_pi(self,angle):
+        return (angle + np.pi) % (2 * np.pi) - np.pi
+    
     def move_joint(self):
+        
         msg = JointState()
         msg.header.stamp = self.get_clock().now().to_msg()
 
@@ -114,12 +118,16 @@ class controller(Node):
             self.q[0] = self.q[0] + (self.q_d[0] * self.dt)
             self.q[1] = self.q[1] + (self.q_d[1] * self.dt)
             self.q[2] = self.q[2] + (self.q_d[2] * self.dt)
+            
         elif (self.target_joint_angles[0] == 0 and self.target_joint_angles[1] == 0 and self.target_joint_angles[2] == 0 and self.q[0] == 0 and self.q[1] == 0 and self.q[2] == 0 and self.mode != 0):
             return
         else :
-            self.q_d[0] = self.gain * (self.target_joint_angles[0] - self.q[0])
-            self.q_d[1] = self.gain * (self.target_joint_angles[1] - self.q[1])
-            self.q_d[2] = self.gain * (self.target_joint_angles[2] - self.q[2])
+
+            self.q_d[0] = self.gain * self.wrap_to_pi(self.target_joint_angles[0] - self.q[0])
+            self.q_d[1] = self.gain * self.wrap_to_pi(self.target_joint_angles[1] - self.q[1])
+            self.q_d[2] = self.gain * self.wrap_to_pi(self.target_joint_angles[2] - self.q[2])
+
+
             self.q[0] = self.q[0] + (self.q_d[0] * self.dt)
             self.q[1] = self.q[1] + (self.q_d[1] * self.dt)
             self.q[2] = self.q[2] + (self.q_d[2] * self.dt)
@@ -144,8 +152,8 @@ class controller(Node):
         
         msg.header.frame_id = "link_0" 
 
-        msg.pose.position.x = self.end_effect_pose[0]
-        msg.pose.position.y = self.end_effect_pose[1]
+        msg.pose.position.x = -self.end_effect_pose[0]
+        msg.pose.position.y = -self.end_effect_pose[1]
         msg.pose.position.z = self.end_effect_pose[2]
         
 
@@ -180,9 +188,15 @@ class controller(Node):
             msg.data = 1
             self.request_target.publish(msg)
         elif self.auto_mode == 2 :
-            self.target_joint_angles[0] = self.target_from_auto.x
-            self.target_joint_angles[1] = self.target_from_auto.y
-            self.target_joint_angles[2] = self.target_from_auto.z
+            mask = [1, 1, 1, 0, 0, 0] # consider only x y z
+            target_pose = SE3(self.target_from_auto.x,self.target_from_auto.y,self.target_from_auto.z)
+            solute = self.robot.ikine_LM(target_pose,mask=mask)
+            target = solute.q
+
+            self.target_joint_angles[0] = -target[0]
+            self.target_joint_angles[1] = -target[1]
+            self.target_joint_angles[2] = target[2]
+
             msg = Int64()
             msg.data = 3
             self.request_target.publish(msg)
@@ -209,9 +223,9 @@ class controller(Node):
         self.cmd[0] = msg.linear.x
         self.cmd[1] = msg.linear.y
         self.cmd[2] = msg.linear.z
-        self.cmd[3] = msg.angular.z
-        self.cmd[4] = msg.angular.z
-        self.cmd[5] = msg.angular.z
+        # self.cmd[3] = msg.angular.z
+        # self.cmd[4] = msg.angular.z
+        # self.cmd[5] = msg.angular.z
 
         if self.x == 1 : 
             Jacobian = self.robot.jacob0(self.q)
