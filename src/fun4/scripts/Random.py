@@ -22,7 +22,7 @@ class Random(Node):
         self.robot = rtb.DHRobot(
         [
             rtb.RevoluteMDH(d=0.2),
-            rtb.RevoluteMDH(alpha = pi/2,offset=pi/2),
+            rtb.RevoluteMDH(alpha = -pi/2,offset=-pi/2),
             rtb.RevoluteMDH(a=0.25),
         ],tool = SE3.Tx(0.28),
         name = "RRR_Robot"

@@ -43,6 +43,7 @@ class controller(Node):
         self.mode = 0
         self.dt = 0.01
         self.q = [0.0, 0.0, 0.0]
+        self.target_pose = [0,0,0]
         self.cmd_vel = [0.0, 0.0, 0.0]
         self.q_d = [0.0, 0.0, 0.0] # q that need to change 
         self.gain = 5
@@ -53,7 +54,7 @@ class controller(Node):
         self.robot = rtb.DHRobot(
         [
             rtb.RevoluteMDH(d=0.2),
-            rtb.RevoluteMDH(alpha = pi/2,offset=pi/2),
+            rtb.RevoluteMDH(alpha = -pi/2,offset=-pi/2),
             rtb.RevoluteMDH(a=0.25),
         ],tool = SE3.Tx(0.28),
         name = "RRR_Robot"
@@ -152,8 +153,8 @@ class controller(Node):
         
         msg.header.frame_id = "link_0" 
 
-        msg.pose.position.x = -self.end_effect_pose[0]
-        msg.pose.position.y = -self.end_effect_pose[1]
+        msg.pose.position.x = self.end_effect_pose[0]
+        msg.pose.position.y = self.end_effect_pose[1]
         msg.pose.position.z = self.end_effect_pose[2]
         
 
@@ -189,12 +190,12 @@ class controller(Node):
             self.request_target.publish(msg)
         elif self.auto_mode == 2 :
             mask = [1, 1, 1, 0, 0, 0] # consider only x y z
-            target_pose = SE3(self.target_from_auto.x,self.target_from_auto.y,self.target_from_auto.z)
-            solute = self.robot.ikine_LM(target_pose,mask=mask)
+            self.target_pose = SE3(self.target_from_auto.x,self.target_from_auto.y,self.target_from_auto.z)
+            solute = self.robot.ikine_LM(self.target_pose,mask=mask)
             target = solute.q
 
-            self.target_joint_angles[0] = -target[0]
-            self.target_joint_angles[1] = -target[1]
+            self.target_joint_angles[0] = target[0]
+            self.target_joint_angles[1] = target[1]
             self.target_joint_angles[2] = target[2]
 
             msg = Int64()
@@ -208,10 +209,15 @@ class controller(Node):
             # current_time = self.get_clock().now().nanoseconds / 1e9
 
             # Hal_get_tick = current_time - self.start_time
+            real_end_pose = [0,0,0]
+            target_pose = [self.target_from_auto.x,self.target_from_auto.y,self.target_from_auto.z]
+            real_end_pose[0] = self.end_effect_pose[0]
+            real_end_pose[1] = self.end_effect_pose[1]
+            real_end_pose[2] = self.end_effect_pose[2]
 
-            errors = np.abs(np.array(self.q) - np.array(self.target_joint_angles))
+            errors = np.abs(np.array(real_end_pose) - np.array(target_pose))
 
-            if errors.sum() < 0.0005:
+            if errors.sum() < 0.001:
                 # self.target_joint_angles = self.q
                 msg = Int64()
                 msg.data = 0
