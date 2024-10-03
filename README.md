@@ -260,11 +260,15 @@ then the position of the end effector will apear on the rviz2
 
 ![image](https://github.com/user-attachments/assets/763167ca-a598-47ed-90fd-2d072cc9d29a)
 
+also you can add the target in rvize like this 
+
+![image](https://github.com/user-attachments/assets/0d257d90-0e29-490a-a57d-5950fd1bb8cd)
+
 
 video output of the end_effector visualisation (click the image)
 
 ps. in the clip will use mode 3 to demo 
 
-[![Watch the video](https://github.com/user-attachments/assets/d2fe5cdf-c64e-44fe-9753-efc6b7e145d7)](https://www.youtube.com/watch?v=D7Mvqn28bHQ)
+[![Watch the video](https://github.com/user-attachments/assets/d2fe5cdf-c64e-44fe-9753-efc6b7e145d7)](https://youtu.be/BjZqHH1jXNs)
 
 
