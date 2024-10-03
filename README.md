@@ -232,7 +232,7 @@ video output mode 3 (click the image)
 
 [![Watch the video](https://github.com/user-attachments/assets/d2fe5cdf-c64e-44fe-9753-efc6b7e145d7)](https://www.youtube.com/watch?v=fKTjRlf-mQk)
 
-### end_effecter_pose 
+### end_effecter_pose and target visualize
 
 as you run each mode after the 
 ```
@@ -265,7 +265,7 @@ also you can add the target in rvize like this
 ![image](https://github.com/user-attachments/assets/0d257d90-0e29-490a-a57d-5950fd1bb8cd)
 
 
-video output of the end_effector visualisation (click the image)
+video output of the rize2 visualisation (click the image)
 
 ps. in the clip will use mode 3 to demo 
 
