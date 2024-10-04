@@ -32,6 +32,9 @@ In this project there is some dependency (if you dont have you can follow this t
 
 * [teleop_twist_keyboard](https://index.ros.org/p/teleop_twist_keyboard/)
 
+and 
+
+* [robotic-toolbox](https://github.com/petercorke/robotics-toolbox-python)
 
 ## **System architecture** 
 
@@ -90,7 +93,7 @@ as the image ,this node will wait for the request from the controller node in to
 ## work space 
  So to know the robot work space ,I create the DH parameter of the RRR robot 
  
- ![Screenshot from 2024-09-28 17-18-10](https://github.com/user-attachments/assets/3fea447b-5478-4f95-bdb7-c0694fa798d9)
+ ![Screenshot from 2024-10-04 10-45-09](https://github.com/user-attachments/assets/74e5c2db-3b0d-4ec9-9ce1-9cd69c4d4799)
 
 and the loop apply each joint -pi till pi and then do the foward kinematic in each angle in every joint and then keep the position x y x and then use that position to plot the max and min workspace of the robot 
 
@@ -263,6 +266,10 @@ then the position of the end effector will apear on the rviz2
 also you can add the target in rvize like this 
 
 ![image](https://github.com/user-attachments/assets/0d257d90-0e29-490a-a57d-5950fd1bb8cd)
+
+or you can when visaulize robot to like this 
+
+![ezgif-2-ec20a10461](https://github.com/user-attachments/assets/98d7c142-1db1-40ec-9d63-98b73a9cc9b3)
 
 
 video output of the rize2 visualisation (click the image)
